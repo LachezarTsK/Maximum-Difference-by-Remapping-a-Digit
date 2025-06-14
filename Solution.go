@@ -1,6 +1,5 @@
 
 package main
-
 import "math"
 
 const NOT_FOUND = -1
