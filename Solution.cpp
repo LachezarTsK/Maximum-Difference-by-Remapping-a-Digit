@@ -27,10 +27,10 @@ private:
         return (numberOfDigits != 0) ? numberOfDigits : 1;
     }
 
-    int createExtremeValue(int input, int digitToInsertForExtremeValue, int dumberOfDigits) const {
+    int createExtremeValue(int input, int digitToInsertForExtremeValue, int numberOfDigits) const {
         int extremeValue = 0;
         int digitToReplace = NOT_FOUND;
-        int extractorForLeftmostValue = pow(10, dumberOfDigits - 1);
+        int extractorForLeftmostValue = pow(10, numberOfDigits - 1);
 
         while (extractorForLeftmostValue > 0) {
             int leftmostDigit = input / extractorForLeftmostValue;
