@@ -27,10 +27,10 @@ func findNumberOfDigits(input int) int {
     return numberOfDigits
 }
 
-func createExtremeValue(input int, digitToInsertForExtremeValue int, dumberOfDigits int) int {
+func createExtremeValue(input int, digitToInsertForExtremeValue int, numberOfDigits int) int {
     extremeValue := 0
     digitToReplace := NOT_FOUND
-    extractorForLeftmostValue := int(math.Pow(10.0, float64(dumberOfDigits - 1)))
+    extractorForLeftmostValue := int(math.Pow(10.0, float64(numberOfDigits - 1)))
 
     for extractorForLeftmostValue > 0 {
         leftmostDigit := input / extractorForLeftmostValue
