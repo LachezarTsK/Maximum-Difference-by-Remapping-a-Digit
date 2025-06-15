@@ -27,11 +27,11 @@ public class Solution
         return (numberOfDigits != 0) ? numberOfDigits : 1;
     }
 
-    private int CreateExtremeValue(int input, int digitToInsertForExtremeValue, int dumberOfDigits)
+    private int CreateExtremeValue(int input, int digitToInsertForExtremeValue, int numberOfDigits)
     {
         int extremeValue = 0;
         int digitToReplace = NOT_FOUND;
-        int extractorForLeftmostValue = (int)Math.Pow(10, dumberOfDigits - 1);
+        int extractorForLeftmostValue = (int)Math.Pow(10, numberOfDigits - 1);
 
         while (extractorForLeftmostValue > 0)
         {
