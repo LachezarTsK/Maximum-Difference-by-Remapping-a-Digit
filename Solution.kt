@@ -27,11 +27,11 @@ class Solution {
         return if (numberOfDigits != 0) numberOfDigits else 1
     }
 
-    private fun createExtremeValue(input: Int, digitToInsertForExtremeValue: Int, dumberOfDigits: Int): Int {
+    private fun createExtremeValue(input: Int, digitToInsertForExtremeValue: Int, numberOfDigits: Int): Int {
         var input = input
         var extremeValue = 0
         var digitToReplace = NOT_FOUND
-        var extractorForLeftmostValue = (10.0).pow(dumberOfDigits - 1).toInt()
+        var extractorForLeftmostValue = (10.0).pow(numberOfDigits - 1).toInt()
 
         while (extractorForLeftmostValue > 0) {
             var leftmostDigit = input / extractorForLeftmostValue
