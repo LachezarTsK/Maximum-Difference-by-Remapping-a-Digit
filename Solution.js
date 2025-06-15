@@ -33,7 +33,7 @@ function findNumberOfDigits(input) {
 /**
  * @param {number} input
  * @param {number} digitToInsertForExtremeValue
- * @param {number} dumberOfDigits
+ * @param {number} numberOfDigits
  * @return {number}
  */
 function createExtremeValue(input, digitToInsertForExtremeValue, numberOfDigits) {
