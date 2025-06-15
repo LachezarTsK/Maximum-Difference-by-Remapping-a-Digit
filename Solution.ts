@@ -22,10 +22,10 @@ function findNumberOfDigits(input: number): number {
     return (numberOfDigits !== 0) ? numberOfDigits : 1;
 }
 
-function createExtremeValue(input: number, digitToInsertForExtremeValue: number, dumberOfDigits: number): number {
+function createExtremeValue(input: number, digitToInsertForExtremeValue: number, numberOfDigits: number): number {
     let extremeValue = 0;
     let digitToReplace = Util.NOT_FOUND;
-    let extractorForLeftmostValue = Math.pow(10, dumberOfDigits - 1);
+    let extractorForLeftmostValue = Math.pow(10, numberOfDigits - 1);
 
     while (extractorForLeftmostValue > 0) {
         let leftmostDigit = Math.floor(input / extractorForLeftmostValue);
