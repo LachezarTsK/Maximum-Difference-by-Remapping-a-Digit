@@ -22,10 +22,10 @@ public class Solution {
         return (numberOfDigits != 0) ? numberOfDigits : 1;
     }
 
-    private int createExtremeValue(int input, int digitToInsertForExtremeValue, int dumberOfDigits) {
+    private int createExtremeValue(int input, int digitToInsertForExtremeValue, int numberOfDigits) {
         int extremeValue = 0;
         int digitToReplace = NOT_FOUND;
-        int extractorForLeftmostValue = (int) Math.pow(10, dumberOfDigits - 1);
+        int extractorForLeftmostValue = (int) Math.pow(10, numberOfDigits - 1);
 
         while (extractorForLeftmostValue > 0) {
             int leftmostDigit = input / extractorForLeftmostValue;
