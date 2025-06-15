@@ -36,10 +36,10 @@ function findNumberOfDigits(input) {
  * @param {number} dumberOfDigits
  * @return {number}
  */
-function createExtremeValue(input, digitToInsertForExtremeValue, dumberOfDigits) {
+function createExtremeValue(input, digitToInsertForExtremeValue, numberOfDigits) {
     let extremeValue = 0;
     let digitToReplace = Util.NOT_FOUND;
-    let extractorForLeftmostValue = Math.pow(10, dumberOfDigits - 1);
+    let extractorForLeftmostValue = Math.pow(10, numberOfDigits - 1);
 
     while (extractorForLeftmostValue > 0) {
         let leftmostDigit = Math.floor(input / extractorForLeftmostValue);
